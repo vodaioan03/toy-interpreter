@@ -1,0 +1,3802 @@
+-------Program State-------
+Symbol Table:
+
+Execution Stack:
+Ref(int) v;new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+
+Execution Stack:
+Ref(int) v
+new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(0, int)
+
+Execution Stack:
+new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(0, int)
+
+Execution Stack:
+new(v, 20)
+Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(1, int)
+
+Execution Stack:
+Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(1, int)
+
+Execution Stack:
+Ref(Ref(int)) a
+new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(0, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(0, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(a, v)
+new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(v, 30)
+print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+
+Execution Stack:
+Ref(int) v;new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+
+Execution Stack:
+Ref(int) v
+new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(0, int)
+
+Execution Stack:
+new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(0, int)
+
+Execution Stack:
+new(v, 20)
+Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(1, int)
+
+Execution Stack:
+Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(1, int)
+
+Execution Stack:
+Ref(Ref(int)) a
+new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(0, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(0, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(a, v)
+new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(v, 30)
+print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+
+Execution Stack:
+Ref(int) v;new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+
+Execution Stack:
+Ref(int) v
+new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(0, int)
+
+Execution Stack:
+new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(0, int)
+
+Execution Stack:
+new(v, 20)
+Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(1, int)
+
+Execution Stack:
+Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(1, int)
+
+Execution Stack:
+Ref(Ref(int)) a
+new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(0, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(0, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(a, v)
+new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(v, 30)
+print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+
+Execution Stack:
+Ref(int) v;new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+
+Execution Stack:
+Ref(int) v
+new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(0, int)
+
+Execution Stack:
+new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(0, int)
+
+Execution Stack:
+new(v, 20)
+Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(1, int)
+
+Execution Stack:
+Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(1, int)
+
+Execution Stack:
+Ref(Ref(int)) a
+new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(0, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(0, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(a, v)
+new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(v, 30)
+print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+
+Execution Stack:
+Ref(int) v;new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+
+Execution Stack:
+Ref(int) v
+new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(0, int)
+
+Execution Stack:
+new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(0, int)
+
+Execution Stack:
+new(v, 20)
+Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(1, int)
+
+Execution Stack:
+Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(1, int)
+
+Execution Stack:
+Ref(Ref(int)) a
+new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(0, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(0, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(a, v)
+new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(v, 30)
+print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+
+Execution Stack:
+Ref(int) v;new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+
+Execution Stack:
+Ref(int) v
+new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(0, int)
+
+Execution Stack:
+new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(0, int)
+
+Execution Stack:
+new(v, 20)
+Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(1, int)
+
+Execution Stack:
+Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(1, int)
+
+Execution Stack:
+Ref(Ref(int)) a
+new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(0, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(0, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(a, v)
+new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(v, 30)
+print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+
+Execution Stack:
+Ref(int) v;new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+
+Execution Stack:
+Ref(int) v
+new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(0, int)
+
+Execution Stack:
+new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(0, int)
+
+Execution Stack:
+new(v, 20)
+Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(1, int)
+
+Execution Stack:
+Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(1, int)
+
+Execution Stack:
+Ref(Ref(int)) a
+new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(0, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(0, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(a, v)
+new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(v, 30)
+print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+
+Execution Stack:
+Ref(int) v;new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+
+Execution Stack:
+Ref(int) v
+new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(0, int)
+
+Execution Stack:
+new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(0, int)
+
+Execution Stack:
+new(v, 20)
+Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(1, int)
+
+Execution Stack:
+Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(1, int)
+
+Execution Stack:
+Ref(Ref(int)) a
+new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(0, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(0, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(a, v)
+new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(v, 30)
+print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+
+Execution Stack:
+Ref(int) v;new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+
+Execution Stack:
+Ref(int) v
+new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(0, int)
+
+Execution Stack:
+new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(0, int)
+
+Execution Stack:
+new(v, 20)
+Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(1, int)
+
+Execution Stack:
+Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(1, int)
+
+Execution Stack:
+Ref(Ref(int)) a
+new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(0, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(0, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(a, v)
+new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(v, 30)
+print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+
+Execution Stack:
+Ref(int) v;new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+
+Execution Stack:
+Ref(int) v
+new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(0, int)
+
+Execution Stack:
+new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(0, int)
+
+Execution Stack:
+new(v, 20)
+Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(1, int)
+
+Execution Stack:
+Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(1, int)
+
+Execution Stack:
+Ref(Ref(int)) a
+new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(0, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(0, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(a, v)
+new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(v, 30)
+print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(3, int)
+
+Execution Stack:
+print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+3(int):-> 30
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+
+Execution Stack:
+Ref(int) v;new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+
+Execution Stack:
+Ref(int) v
+new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(0, int)
+
+Execution Stack:
+new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(0, int)
+
+Execution Stack:
+new(v, 20)
+Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(1, int)
+
+Execution Stack:
+Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(1, int)
+
+Execution Stack:
+Ref(Ref(int)) a
+new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(0, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(0, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(a, v)
+new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(v, 30)
+print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(3, int)
+
+Execution Stack:
+print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+3(int):-> 30
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+
+Execution Stack:
+Ref(int) v;new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+
+Execution Stack:
+Ref(int) v
+new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(0, int)
+
+Execution Stack:
+new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(0, int)
+
+Execution Stack:
+new(v, 20)
+Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(1, int)
+
+Execution Stack:
+Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(1, int)
+
+Execution Stack:
+Ref(Ref(int)) a
+new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(0, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(0, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(a, v)
+new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(v, 30)
+print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(3, int)
+
+Execution Stack:
+print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+3(int):-> 30
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+
+Execution Stack:
+Ref(int) v;new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+
+Execution Stack:
+Ref(int) v
+new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+
+Execution Stack:
+Ref(int) v
+new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(0, int)
+
+Execution Stack:
+new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(0, int)
+
+Execution Stack:
+new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(0, int)
+
+Execution Stack:
+new(v, 20)
+Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(0, int)
+
+Execution Stack:
+new(v, 20)
+Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(1, int)
+
+Execution Stack:
+Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(1, int)
+
+Execution Stack:
+Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(1, int)
+
+Execution Stack:
+Ref(Ref(int)) a
+new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(1, int)
+
+Execution Stack:
+Ref(Ref(int)) a
+new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(0, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(0, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(0, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(a, v)
+new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(0, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(a, v)
+new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(v, 30)
+print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(v, 30)
+print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(3, int)
+
+Execution Stack:
+print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+3(int):-> 30
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(3, int)
+
+Execution Stack:
+print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+2(Ref(int)):-> Reference(1, int)
+3(int):-> 30
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+
+Execution Stack:
+Ref(int) v;new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+
+Execution Stack:
+Ref(int) v
+new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+
+Execution Stack:
+Ref(int) v
+new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(0, int)
+
+Execution Stack:
+new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(0, int)
+
+Execution Stack:
+new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(0, int)
+
+Execution Stack:
+new(v, 20)
+Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(0, int)
+
+Execution Stack:
+new(v, 20)
+Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(1, int)
+
+Execution Stack:
+Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(1, int)
+
+Execution Stack:
+Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(1, int)
+
+Execution Stack:
+Ref(Ref(int)) a
+new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(1, int)
+
+Execution Stack:
+Ref(Ref(int)) a
+new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(0, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(0, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(0, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(a, v)
+new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(0, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(a, v)
+new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(v, 30)
+print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(v, 30)
+print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(3, int)
+
+Execution Stack:
+print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+3(int):-> 30
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(3, int)
+
+Execution Stack:
+print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+2(Ref(int)):-> Reference(1, int)
+3(int):-> 30
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+
+Execution Stack:
+Ref(int) v;new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+
+Execution Stack:
+Ref(int) v
+new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+
+Execution Stack:
+Ref(int) v
+new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(0, int)
+
+Execution Stack:
+new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(0, int)
+
+Execution Stack:
+new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(0, int)
+
+Execution Stack:
+new(v, 20)
+Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(0, int)
+
+Execution Stack:
+new(v, 20)
+Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(1, int)
+
+Execution Stack:
+Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(1, int)
+
+Execution Stack:
+Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(1, int)
+
+Execution Stack:
+Ref(Ref(int)) a
+new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(1, int)
+
+Execution Stack:
+Ref(Ref(int)) a
+new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(0, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(0, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(0, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(a, v)
+new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(0, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(a, v)
+new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(v, 30)
+print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(v, 30)
+print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(3, int)
+
+Execution Stack:
+print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+3(int):-> 30
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(3, int)
+
+Execution Stack:
+print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+2(Ref(int)):-> Reference(1, int)
+3(int):-> 30
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+
+Execution Stack:
+Ref(int) v;new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+
+Execution Stack:
+Ref(int) v
+new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+
+Execution Stack:
+Ref(int) v
+new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(0, int)
+
+Execution Stack:
+new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(0, int)
+
+Execution Stack:
+new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(0, int)
+
+Execution Stack:
+new(v, 20)
+Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(0, int)
+
+Execution Stack:
+new(v, 20)
+Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(1, int)
+
+Execution Stack:
+Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(1, int)
+
+Execution Stack:
+Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(1, int)
+
+Execution Stack:
+Ref(Ref(int)) a
+new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(1, int)
+
+Execution Stack:
+Ref(Ref(int)) a
+new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(0, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(0, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(0, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(a, v)
+new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(0, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(a, v)
+new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(v, 30)
+print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(v, 30)
+print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(3, int)
+
+Execution Stack:
+print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+3(int):-> 30
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(3, int)
+
+Execution Stack:
+print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+2(Ref(int)):-> Reference(1, int)
+3(int):-> 30
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+
+Execution Stack:
+Ref(int) v;new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+
+Execution Stack:
+Ref(int) v
+new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+
+Execution Stack:
+Ref(int) v
+new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(0, int)
+
+Execution Stack:
+new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(0, int)
+
+Execution Stack:
+new(v, 20);Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(0, int)
+
+Execution Stack:
+new(v, 20)
+Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(0, int)
+
+Execution Stack:
+new(v, 20)
+Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(1, int)
+
+Execution Stack:
+Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(1, int)
+
+Execution Stack:
+Ref(Ref(int)) a;new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(1, int)
+
+Execution Stack:
+Ref(Ref(int)) a
+new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> Reference(1, int)
+
+Execution Stack:
+Ref(Ref(int)) a
+new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(0, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(0, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(a, v);new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(0, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(a, v)
+new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(0, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(a, v)
+new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(v, 30);print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(v, 30)
+print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(1, int)
+
+Execution Stack:
+new(v, 30)
+print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(3, int)
+
+Execution Stack:
+print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+1(int):-> 20
+2(Ref(int)):-> Reference(1, int)
+3(int):-> 30
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+a -> Reference(2, Ref(int))
+v -> Reference(3, int)
+
+Execution Stack:
+print(ReadHeap(ReadHeap(a)))
+
+Output List:
+
+File Table:
+Heap:
+2(Ref(int)):-> Reference(1, int)
+3(int):-> 30
+
+
+---------------------------
+

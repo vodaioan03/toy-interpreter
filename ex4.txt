@@ -1,0 +1,1432 @@
+-------Program State-------
+Symbol Table:
+
+Execution Stack:
+String varf;varf = test.in;openRFile(varf);int varc;readFile(varf, varc);print(varc);readFile(varf, varc);print(varc);closeRFile(varf)
+
+Output List:
+
+File Table:
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+
+Execution Stack:
+String varf
+varf = test.in;openRFile(varf);int varc;readFile(varf, varc);print(varc);readFile(varf, varc);print(varc);closeRFile(varf)
+
+Output List:
+
+File Table:
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+varf -> 
+
+Execution Stack:
+varf = test.in;openRFile(varf);int varc;readFile(varf, varc);print(varc);readFile(varf, varc);print(varc);closeRFile(varf)
+
+Output List:
+
+File Table:
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+varf -> 
+
+Execution Stack:
+varf = test.in
+openRFile(varf);int varc;readFile(varf, varc);print(varc);readFile(varf, varc);print(varc);closeRFile(varf)
+
+Output List:
+
+File Table:
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+varf -> test.in
+
+Execution Stack:
+openRFile(varf);int varc;readFile(varf, varc);print(varc);readFile(varf, varc);print(varc);closeRFile(varf)
+
+Output List:
+
+File Table:
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+varf -> test.in
+
+Execution Stack:
+openRFile(varf)
+int varc;readFile(varf, varc);print(varc);readFile(varf, varc);print(varc);closeRFile(varf)
+
+Output List:
+
+File Table:
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+varf -> test.in
+
+Execution Stack:
+int varc;readFile(varf, varc);print(varc);readFile(varf, varc);print(varc);closeRFile(varf)
+
+Output List:
+
+File Table:
+test.in
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+varf -> test.in
+
+Execution Stack:
+int varc
+readFile(varf, varc);print(varc);readFile(varf, varc);print(varc);closeRFile(varf)
+
+Output List:
+
+File Table:
+test.in
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+varf -> test.in
+varc -> 0
+
+Execution Stack:
+readFile(varf, varc);print(varc);readFile(varf, varc);print(varc);closeRFile(varf)
+
+Output List:
+
+File Table:
+test.in
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+varf -> test.in
+varc -> 0
+
+Execution Stack:
+readFile(varf, varc)
+print(varc);readFile(varf, varc);print(varc);closeRFile(varf)
+
+Output List:
+
+File Table:
+test.in
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+varf -> test.in
+varc -> 15
+
+Execution Stack:
+print(varc);readFile(varf, varc);print(varc);closeRFile(varf)
+
+Output List:
+
+File Table:
+test.in
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+varf -> test.in
+varc -> 15
+
+Execution Stack:
+print(varc)
+readFile(varf, varc);print(varc);closeRFile(varf)
+
+Output List:
+
+File Table:
+test.in
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+varf -> test.in
+varc -> 15
+
+Execution Stack:
+readFile(varf, varc);print(varc);closeRFile(varf)
+
+Output List:
+15
+
+File Table:
+test.in
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+varf -> test.in
+varc -> 15
+
+Execution Stack:
+readFile(varf, varc)
+print(varc);closeRFile(varf)
+
+Output List:
+15
+
+File Table:
+test.in
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+varf -> test.in
+varc -> 30
+
+Execution Stack:
+print(varc);closeRFile(varf)
+
+Output List:
+15
+
+File Table:
+test.in
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+varf -> test.in
+varc -> 30
+
+Execution Stack:
+print(varc)
+closeRFile(varf)
+
+Output List:
+15
+
+File Table:
+test.in
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+varf -> test.in
+varc -> 30
+
+Execution Stack:
+closeRFile(varf)
+
+Output List:
+15
+30
+
+File Table:
+test.in
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+varf -> test.in
+varc -> 30
+
+Execution Stack:
+
+Output List:
+15
+30
+
+File Table:
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+
+Execution Stack:
+int v;v = 4;while ( ) ;print(v)
+
+Output List:
+
+File Table:
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+
+Execution Stack:
+int v
+v = 4;while ( ) ;print(v)
+
+Output List:
+
+File Table:
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> 0
+
+Execution Stack:
+v = 4;while ( ) ;print(v)
+
+Output List:
+
+File Table:
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> 0
+
+Execution Stack:
+v = 4
+while ( ) ;print(v)
+
+Output List:
+
+File Table:
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> 4
+
+Execution Stack:
+while ( ) ;print(v)
+
+Output List:
+
+File Table:
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> 4
+
+Execution Stack:
+while ( ) 
+print(v)
+
+Output List:
+
+File Table:
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> 4
+
+Execution Stack:
+print(v);v = v - 1
+while ( ) 
+print(v)
+
+Output List:
+
+File Table:
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> 4
+
+Execution Stack:
+print(v)
+v = v - 1
+while ( ) 
+print(v)
+
+Output List:
+
+File Table:
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> 4
+
+Execution Stack:
+v = v - 1
+while ( ) 
+print(v)
+
+Output List:
+4
+
+File Table:
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> 3
+
+Execution Stack:
+while ( ) 
+print(v)
+
+Output List:
+4
+
+File Table:
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> 3
+
+Execution Stack:
+print(v);v = v - 1
+while ( ) 
+print(v)
+
+Output List:
+4
+
+File Table:
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> 3
+
+Execution Stack:
+print(v)
+v = v - 1
+while ( ) 
+print(v)
+
+Output List:
+4
+
+File Table:
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> 3
+
+Execution Stack:
+v = v - 1
+while ( ) 
+print(v)
+
+Output List:
+4
+3
+
+File Table:
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> 2
+
+Execution Stack:
+while ( ) 
+print(v)
+
+Output List:
+4
+3
+
+File Table:
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> 2
+
+Execution Stack:
+print(v);v = v - 1
+while ( ) 
+print(v)
+
+Output List:
+4
+3
+
+File Table:
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> 2
+
+Execution Stack:
+print(v)
+v = v - 1
+while ( ) 
+print(v)
+
+Output List:
+4
+3
+
+File Table:
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> 2
+
+Execution Stack:
+v = v - 1
+while ( ) 
+print(v)
+
+Output List:
+4
+3
+2
+
+File Table:
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> 1
+
+Execution Stack:
+while ( ) 
+print(v)
+
+Output List:
+4
+3
+2
+
+File Table:
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> 1
+
+Execution Stack:
+print(v);v = v - 1
+while ( ) 
+print(v)
+
+Output List:
+4
+3
+2
+
+File Table:
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> 1
+
+Execution Stack:
+print(v)
+v = v - 1
+while ( ) 
+print(v)
+
+Output List:
+4
+3
+2
+
+File Table:
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> 1
+
+Execution Stack:
+v = v - 1
+while ( ) 
+print(v)
+
+Output List:
+4
+3
+2
+1
+
+File Table:
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> 0
+
+Execution Stack:
+while ( ) 
+print(v)
+
+Output List:
+4
+3
+2
+1
+
+File Table:
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> 0
+
+Execution Stack:
+print(v)
+
+Output List:
+4
+3
+2
+1
+
+File Table:
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> 0
+
+Execution Stack:
+
+Output List:
+4
+3
+2
+1
+0
+
+File Table:
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+
+Execution Stack:
+int v;v = 4;while ( ) ;print(v)
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+
+Execution Stack:
+int v
+v = 4;while ( ) ;print(v)
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> 0
+
+Execution Stack:
+v = 4;while ( ) ;print(v)
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> 0
+
+Execution Stack:
+v = 4
+while ( ) ;print(v)
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> 4
+
+Execution Stack:
+while ( ) ;print(v)
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> 4
+
+Execution Stack:
+while ( ) 
+print(v)
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> 4
+
+Execution Stack:
+print(v);v = v - 1
+while ( ) 
+print(v)
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> 4
+
+Execution Stack:
+print(v)
+v = v - 1
+while ( ) 
+print(v)
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> 4
+
+Execution Stack:
+v = v - 1
+while ( ) 
+print(v)
+
+Output List:
+4
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> 3
+
+Execution Stack:
+while ( ) 
+print(v)
+
+Output List:
+4
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> 3
+
+Execution Stack:
+print(v);v = v - 1
+while ( ) 
+print(v)
+
+Output List:
+4
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> 3
+
+Execution Stack:
+print(v)
+v = v - 1
+while ( ) 
+print(v)
+
+Output List:
+4
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> 3
+
+Execution Stack:
+v = v - 1
+while ( ) 
+print(v)
+
+Output List:
+4
+3
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> 2
+
+Execution Stack:
+while ( ) 
+print(v)
+
+Output List:
+4
+3
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> 2
+
+Execution Stack:
+print(v);v = v - 1
+while ( ) 
+print(v)
+
+Output List:
+4
+3
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> 2
+
+Execution Stack:
+print(v)
+v = v - 1
+while ( ) 
+print(v)
+
+Output List:
+4
+3
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> 2
+
+Execution Stack:
+v = v - 1
+while ( ) 
+print(v)
+
+Output List:
+4
+3
+2
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> 1
+
+Execution Stack:
+while ( ) 
+print(v)
+
+Output List:
+4
+3
+2
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> 1
+
+Execution Stack:
+print(v);v = v - 1
+while ( ) 
+print(v)
+
+Output List:
+4
+3
+2
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> 1
+
+Execution Stack:
+print(v)
+v = v - 1
+while ( ) 
+print(v)
+
+Output List:
+4
+3
+2
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> 1
+
+Execution Stack:
+v = v - 1
+while ( ) 
+print(v)
+
+Output List:
+4
+3
+2
+1
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> 0
+
+Execution Stack:
+while ( ) 
+print(v)
+
+Output List:
+4
+3
+2
+1
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> 0
+
+Execution Stack:
+print(v)
+
+Output List:
+4
+3
+2
+1
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+v -> 0
+
+Execution Stack:
+
+Output List:
+4
+3
+2
+1
+0
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+
+Execution Stack:
+if (2 < 3){ print(4)} else { print(5)}
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+
+Execution Stack:
+print(4)
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+
+Execution Stack:
+
+Output List:
+4
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+
+Execution Stack:
+String varf;varf = test.in;openRFile(varf);int varc;readFile(varf, varc);print(varc);readFile(varf, varc);print(varc);closeRFile(varf)
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+
+Execution Stack:
+String varf
+varf = test.in;openRFile(varf);int varc;readFile(varf, varc);print(varc);readFile(varf, varc);print(varc);closeRFile(varf)
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+varf -> 
+
+Execution Stack:
+varf = test.in;openRFile(varf);int varc;readFile(varf, varc);print(varc);readFile(varf, varc);print(varc);closeRFile(varf)
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+varf -> 
+
+Execution Stack:
+varf = test.in
+openRFile(varf);int varc;readFile(varf, varc);print(varc);readFile(varf, varc);print(varc);closeRFile(varf)
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+varf -> test.in
+
+Execution Stack:
+openRFile(varf);int varc;readFile(varf, varc);print(varc);readFile(varf, varc);print(varc);closeRFile(varf)
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+varf -> test.in
+
+Execution Stack:
+openRFile(varf)
+int varc;readFile(varf, varc);print(varc);readFile(varf, varc);print(varc);closeRFile(varf)
+
+Output List:
+
+File Table:
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+varf -> test.in
+
+Execution Stack:
+int varc;readFile(varf, varc);print(varc);readFile(varf, varc);print(varc);closeRFile(varf)
+
+Output List:
+
+File Table:
+test.in
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+varf -> test.in
+
+Execution Stack:
+int varc
+readFile(varf, varc);print(varc);readFile(varf, varc);print(varc);closeRFile(varf)
+
+Output List:
+
+File Table:
+test.in
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+varf -> test.in
+varc -> 0
+
+Execution Stack:
+readFile(varf, varc);print(varc);readFile(varf, varc);print(varc);closeRFile(varf)
+
+Output List:
+
+File Table:
+test.in
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+varf -> test.in
+varc -> 0
+
+Execution Stack:
+readFile(varf, varc)
+print(varc);readFile(varf, varc);print(varc);closeRFile(varf)
+
+Output List:
+
+File Table:
+test.in
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+varf -> test.in
+varc -> 15
+
+Execution Stack:
+print(varc);readFile(varf, varc);print(varc);closeRFile(varf)
+
+Output List:
+
+File Table:
+test.in
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+varf -> test.in
+varc -> 15
+
+Execution Stack:
+print(varc)
+readFile(varf, varc);print(varc);closeRFile(varf)
+
+Output List:
+
+File Table:
+test.in
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+varf -> test.in
+varc -> 15
+
+Execution Stack:
+readFile(varf, varc);print(varc);closeRFile(varf)
+
+Output List:
+15
+
+File Table:
+test.in
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+varf -> test.in
+varc -> 15
+
+Execution Stack:
+readFile(varf, varc)
+print(varc);closeRFile(varf)
+
+Output List:
+15
+
+File Table:
+test.in
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+varf -> test.in
+varc -> 30
+
+Execution Stack:
+print(varc);closeRFile(varf)
+
+Output List:
+15
+
+File Table:
+test.in
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+varf -> test.in
+varc -> 30
+
+Execution Stack:
+print(varc)
+closeRFile(varf)
+
+Output List:
+15
+
+File Table:
+test.in
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+varf -> test.in
+varc -> 30
+
+Execution Stack:
+closeRFile(varf)
+
+Output List:
+15
+30
+
+File Table:
+test.in
+Heap:
+
+
+---------------------------
+
+-------Program State-------
+Symbol Table:
+varf -> test.in
+varc -> 30
+
+Execution Stack:
+
+Output List:
+15
+30
+
+File Table:
+Heap:
+
+
+---------------------------
+
