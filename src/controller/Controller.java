@@ -11,9 +11,7 @@ import model.values.IValue;
 import model.values.ReferenceValue;
 import repository.IRepository;
 
-import java.util.Collection;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class Controller {
@@ -33,6 +31,38 @@ public class Controller {
         repo.addPrgState(prg);
     }
 
+
+    public Map<Integer, IValue> safeGarbageCollector(List<Integer> symTableAddr, Map<Integer, IValue> heap)
+    {
+        List<Integer> addresses = new ArrayList<>(symTableAddr);
+        boolean found = true;
+        while (found)
+        {
+            found = false;
+            List<IValue> referenced = new ArrayList<>();
+            for (Integer address : addresses)
+            {
+                IValue value = heap.get(address);
+                if (value != null)
+                    referenced.add(value);
+            }
+            List<Integer> newAddresses = getAddrFromSymTable(referenced);
+            for (Integer address: newAddresses)
+                if (! addresses.contains(address))
+                {
+                    addresses.add(address);
+                    found = true;
+                }
+        }
+
+        Map<Integer, IValue> result = new HashMap<>();
+        for (Map.Entry<Integer, IValue> entry : heap.entrySet()) {
+            if (addresses.contains(entry.getKey())) {
+                result.put(entry.getKey(), entry.getValue());
+            }
+        }
+        return result;
+    }
 
     Map<Integer, IValue> unsafeGarbageCollector(List<Integer> symTableAddr, Map<Integer,IValue>
             heap){
@@ -80,9 +110,10 @@ public class Controller {
         while(!prg.getExecStack().isEmpty()){
             prg = oneStep(prg);
             repo.logPrgStateExec();
-            prg.getHeap().setContent(unsafeGarbageCollector(
+            prg.getHeap().setContent(safeGarbageCollector(
                     getAddrFromSymTable(prg.getSymTable().getValues()),
                     prg.getHeap().toMap()));
+            System.out.println("== !! ==");
             repo.logPrgStateExec();
         }
         //display the initial state

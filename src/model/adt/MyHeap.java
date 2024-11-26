@@ -21,7 +21,6 @@ public class MyHeap implements MyIHeap {
     public int allocate(IValue value) {
         heap.insert(nextFreeAddress, value);
         nextFreeAddress += 1;
-        System.out.println("heap allocate: " + nextFreeAddress);
         return nextFreeAddress - 1;
     }
 
@@ -37,7 +36,6 @@ public class MyHeap implements MyIHeap {
     @Override
     public void write(int address, IValue value) throws InvalidAddressException {
         if(!heap.getKeys().contains(address)) {
-            System.out.println("AICI HEAP WRITE");
             throw new InvalidAddressException("Address "
                     + Integer.toString(address)
                     + " out of bounds.");
@@ -66,7 +64,6 @@ public class MyHeap implements MyIHeap {
     public void setContent(Map<Integer, IValue> content) {
         MyDictionary<Integer, IValue> newHeap = new MyDictionary<>();
         for (Map.Entry<Integer, IValue> entry : content.entrySet()) {
-            System.out.println(entry.getKey() + ": " + entry.getValue());
             newHeap.insert(entry.getKey(), entry.getValue());
         }
         this.heap = newHeap;
