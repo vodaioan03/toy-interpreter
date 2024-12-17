@@ -1,42 +1,81 @@
 package model.statements;
 
-import exceptions.AppException;
+import exceptions.ADTException;
+import exceptions.ExpressionException;
+import exceptions.HeapException;
 import exceptions.StatementException;
+import model.adt.MyIDictionary;
 import model.expressions.IExpression;
 import model.state.PrgState;
 import model.types.IType;
+import model.types.RefType;
 import model.values.IValue;
-import model.values.ReferenceValue;
+import model.values.RefValue;
 
 public class WriteHeapStatement implements IStatement{
-    IExpression address;
+
+    String var;
     IExpression expression;
 
-    public WriteHeapStatement(IExpression address, IExpression expression) {
-        this.address = address;
+    public WriteHeapStatement(String var, IExpression expression){
+        this.var = var;
         this.expression = expression;
     }
 
 
     @Override
-    public PrgState execute(PrgState state) throws StatementException {
-        IValue addressValue = address.eval(state.getSymTable(),state.getHeap());
-        IValue expressionValue = expression.eval(state.getSymTable(),state.getHeap());
-        if(!(addressValue.getType() instanceof IType)){
-            throw new AppException("Heap should be accessed only using references");
+    public PrgState execute(PrgState state) throws StatementException, ExpressionException, ADTException, HeapException {
+
+        //check if the variable is in the symbol table
+        if(!state.getSymTable().contains(var)){
+            throw new StatementException("Variable " + var + " is not defined");
         }
 
-        state.getHeap().write(((ReferenceValue)addressValue).getAddress(), expressionValue);
-        return state;
+        //check if the variable is a reference
+        IValue val = state.getSymTable().get(var);
+        if(!(val instanceof RefValue)){
+            throw new StatementException("Variable " + var + " is not a reference");
+        }
+
+        //check if the address exists in the heap
+        int address = ((RefValue) val).getAddr();
+        if(!state.getHeap().contains(address)){
+            throw new StatementException("Address " + address + " is not in the heap");
+        }
+
+        //evaluate the expression
+        IValue expValue = expression.eval(state.getSymTable(), state.getHeap());
+
+        //check if the expression value is of the same type as the reference type
+        if(!((RefValue)val).getLocationType().equals(expValue.getType())){
+            throw new StatementException("Expression value is not of the same type as the reference type");
+        }
+
+        //update the value in the heap
+        state.getHeap().set(address, expValue);
+
+        return null;
     }
 
     @Override
     public IStatement deepCopy() {
-        return new WriteHeapStatement(address.deepCopy(), expression.deepCopy());
+        return new WriteHeapStatement(var, expression.deepCopy());
     }
 
     @Override
+    public MyIDictionary<String, IType> typeCheck(MyIDictionary<String, IType> typeEnv) throws StatementException, ADTException, ExpressionException {
+
+        IType varType = typeEnv.get(var);
+        IType expType = expression.typeCheck(typeEnv);
+
+        if(!varType.equals(new RefType(expType))){
+            throw new StatementException("WriteHeap: right hand side and left hand side have different types");
+        }
+
+        return typeEnv;
+    }
+
     public String toString(){
-        return "writeHeap(" + address.toString() + ", " + expression.toString() + ")";
+        return "wH(" + var + ", " + expression + ")";
     }
 }

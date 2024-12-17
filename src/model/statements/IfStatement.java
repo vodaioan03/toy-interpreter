@@ -1,9 +1,13 @@
 package model.statements;
 
+import exceptions.ADTException;
+import exceptions.ExpressionException;
 import exceptions.StatementException;
+import model.adt.MyIDictionary;
 import model.expressions.IExpression;
 import model.state.PrgState;
 import model.types.BoolType;
+import model.types.IType;
 import model.values.BoolValue;
 import model.values.IValue;
 
@@ -21,10 +25,10 @@ public class IfStatement implements IStatement {
     }
 
     @Override
-    public PrgState execute(PrgState state) throws StatementException {
+    public PrgState execute(PrgState state) throws StatementException, ExpressionException, ADTException {
 
         //evaluate the condition
-        IValue result = expression.eval(state.getSymTable(),state.getHeap());
+        IValue result = expression.eval(state.getSymTable(), state.getHeap());
 
         //check if it is a boolean
         if(!result.getType().equals(new BoolType())){
@@ -39,7 +43,7 @@ public class IfStatement implements IStatement {
         else{
             state.getExecStack().push(statementElse);
         }
-        return state;
+        return null;
     }
 
     @Override
@@ -47,7 +51,18 @@ public class IfStatement implements IStatement {
         return new IfStatement(expression.deepCopy(), statementThen.deepCopy(), statementElse.deepCopy());
     }
 
+    @Override
+    public MyIDictionary<String, IType> typeCheck(MyIDictionary<String, IType> typeEnv) throws StatementException, ADTException, ExpressionException {
+        IType exprTyp = expression.typeCheck(typeEnv);
+        if(!exprTyp.equals(new BoolType())){
+            throw new StatementException("The condition of IF is not a boolean");
+        }
+        statementThen.typeCheck(typeEnv.deepCopy());
+        statementElse.typeCheck(typeEnv.deepCopy());
+        return typeEnv;
+    }
+
     public String toString(){
-        return "if (" + expression.toString() + "){ " + statementThen.toString() + "} else { " + statementElse.toString() + "}";
+        return "if (" + expression + "){ " + statementThen + "} else { " + statementElse + "}";
     }
 }

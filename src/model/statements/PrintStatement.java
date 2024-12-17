@@ -1,7 +1,12 @@
 package model.statements;
 
+import exceptions.ADTException;
+import exceptions.ExpressionException;
+import exceptions.StatementException;
+import model.adt.MyIDictionary;
 import model.expressions.IExpression;
 import model.state.PrgState;
+import model.types.IType;
 import model.values.IValue;
 
 public class PrintStatement implements IStatement {
@@ -13,14 +18,14 @@ public class PrintStatement implements IStatement {
     }
 
     @Override
-    public PrgState execute(PrgState state) {
+    public PrgState execute(PrgState state) throws StatementException, ExpressionException, ADTException {
 
         //evaluate the expression
-        IValue result = expression.eval(state.getSymTable(),state.getHeap());
+        IValue result = expression.eval(state.getSymTable(), state.getHeap());
 
         //add it as a string to the output list
         state.getOutputList().add(result.toString());
-        return state;
+        return null;
     }
 
     @Override
@@ -28,7 +33,13 @@ public class PrintStatement implements IStatement {
         return new PrintStatement(expression.deepCopy());
     }
 
+    @Override
+    public MyIDictionary<String, IType> typeCheck(MyIDictionary<String, IType> typeEnv) throws StatementException, ADTException, ExpressionException {
+        expression.typeCheck(typeEnv);
+        return typeEnv;
+    }
+
     public String toString(){
-        return "print(" + expression.toString() + ")";
+        return "print(" + expression + ")";
     }
 }

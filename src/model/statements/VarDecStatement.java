@@ -1,6 +1,9 @@
 package model.statements;
 
+import exceptions.ADTException;
+import exceptions.ExpressionException;
 import exceptions.StatementException;
+import model.adt.MyIDictionary;
 import model.expressions.VariableExpression;
 import model.state.PrgState;
 import model.types.IType;
@@ -18,9 +21,9 @@ public class VarDecStatement implements IStatement{
     }
 
     @Override
-    public PrgState execute(PrgState state) throws StatementException {
+    public PrgState execute(PrgState state) throws StatementException, ExpressionException, ADTException {
         state.getSymTable().insert(variableName, typ.defaultValue());
-        return state;
+        return null;
     }
 
     @Override
@@ -28,7 +31,13 @@ public class VarDecStatement implements IStatement{
         return new VarDecStatement(variableName, typ);
     }
 
+    @Override
+    public MyIDictionary<String, IType> typeCheck(MyIDictionary<String, IType> typeEnv) throws StatementException, ADTException, ExpressionException {
+        typeEnv.insert(variableName, typ);
+        return typeEnv;
+    }
+
     public String toString() {
-        return typ.toString() + " " + variableName;
+        return typ + " " + variableName;
     }
 }

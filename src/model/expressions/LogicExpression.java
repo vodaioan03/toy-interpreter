@@ -5,6 +5,8 @@ import exceptions.ExpressionException;
 import model.adt.MyIDictionary;
 import model.adt.MyIHeap;
 import model.types.BoolType;
+import model.types.IType;
+import model.types.IntType;
 import model.values.BoolValue;
 import model.values.IValue;
 
@@ -25,8 +27,8 @@ public class LogicExpression implements IExpression {
     public IValue eval(MyIDictionary<String, IValue> symTable, MyIHeap heap) throws ADTException, ExpressionException {
 
         //evaluate both sides of the expression
-        IValue evaluatedLeft = left.eval(symTable,heap);
-        IValue evaluatedRight = right.eval(symTable,heap);
+        IValue evaluatedLeft = left.eval(symTable, heap);
+        IValue evaluatedRight = right.eval(symTable, heap);
 
         //check for both sides to be boolean
         if(!evaluatedLeft.getType().equals(new BoolType())){
@@ -52,7 +54,25 @@ public class LogicExpression implements IExpression {
         return new LogicExpression(left.deepCopy(), operator, right.deepCopy());
     }
 
+    @Override
+    public IType typeCheck(MyIDictionary<String, IType> typeEnv) throws ExpressionException, ADTException {
+        IType t1, t2;
+        t1 = left.typeCheck(typeEnv);
+        t2 = right.typeCheck(typeEnv);
+        if(t1.equals(new BoolType())){
+            if(t2.equals(new BoolType())){
+                return new BoolType();
+            }
+            else{
+                throw new ExpressionException("second operand is not a boolean");
+            }
+        }
+        else{
+            throw new ExpressionException("first operand is not an boolean");
+        }
+    }
+
     public String toString(){
-        return left.toString() + " " + operator + " " + right.toString();
+        return left + " " + operator + " " + right;
     }
 }

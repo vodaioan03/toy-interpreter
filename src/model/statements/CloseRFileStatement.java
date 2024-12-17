@@ -1,8 +1,13 @@
 package model.statements;
 
+import exceptions.ADTException;
+import exceptions.ExpressionException;
+import exceptions.KeyNotFoundException;
 import exceptions.StatementException;
+import model.adt.MyIDictionary;
 import model.expressions.IExpression;
 import model.state.PrgState;
+import model.types.IType;
 import model.types.StringType;
 import model.values.IValue;
 import model.values.StringValue;
@@ -19,16 +24,16 @@ public class CloseRFileStatement implements IStatement{
     }
 
     @Override
-    public PrgState execute(PrgState state) throws StatementException {
+    public PrgState execute(PrgState state) throws StatementException, ExpressionException, ADTException {
 
-        IValue result = exp.eval(state.getSymTable(),state.getHeap());
+        IValue result = exp.eval(state.getSymTable(), state.getHeap());
 
-        
+        //check if the expression evaluates to a string
         if(!result.getType().equals(new StringType())){
             throw new StatementException("File name is not a string");
         }
 
-        
+        //search for the file in the file table and get the bufferedReader
         if(!state.getFileTable().contains((StringValue) result)){
             throw new StatementException("File not opened");
         }
@@ -38,14 +43,14 @@ public class CloseRFileStatement implements IStatement{
             BufferedReader reader = state.getFileTable().get((StringValue) result);
             reader.close();
         }
-        catch (IOException e){
-            throw new StatementException("Error closing file");
+        catch (IOException | KeyNotFoundException e){
+            throw new StatementException(e.getMessage());
         }
 
-        
+        //remove the file from the file table
         state.getFileTable().remove((StringValue) result);
 
-        return state;
+        return null;
     }
 
     @Override
@@ -53,7 +58,16 @@ public class CloseRFileStatement implements IStatement{
         return new CloseRFileStatement(exp.deepCopy());
     }
 
+    @Override
+    public MyIDictionary<String, IType> typeCheck(MyIDictionary<String, IType> typeEnv) throws StatementException, ADTException, ExpressionException {
+        IType expType = exp.typeCheck(typeEnv);
+        if(!expType.equals(new StringType())){
+            throw new StatementException("File name is not a string");
+        }
+        return typeEnv;
+    }
+
     public String toString(){
-        return "closeRFile(" + exp.toString() + ")";
+        return "closeRFile(" + exp + ")";
     }
 }

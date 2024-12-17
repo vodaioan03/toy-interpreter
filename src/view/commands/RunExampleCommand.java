@@ -1,9 +1,7 @@
 package view.commands;
 
 import controller.Controller;
-import exceptions.ADTException;
-import exceptions.ExpressionException;
-import exceptions.StatementException;
+import exceptions.*;
 
 public class RunExampleCommand extends Command{
 
@@ -16,7 +14,11 @@ public class RunExampleCommand extends Command{
 
     @Override
     public void execute(){
-        controller.allStep();
+        try{
+            controller.allStep();
+        } catch (ControllerException e){
+            System.out.println(e.getMessage());
+        }
     }
 
 

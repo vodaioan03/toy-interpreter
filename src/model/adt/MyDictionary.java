@@ -2,7 +2,6 @@ package model.adt;
 
 import exceptions.KeyNotFoundException;
 
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
@@ -13,6 +12,10 @@ public class MyDictionary<K,V> implements MyIDictionary<K,V>{
 
     public MyDictionary() {
         map = new HashMap<>();
+    }
+
+    public MyDictionary(Map<K,V> map) {
+        this.map = new HashMap<>(map);
     }
     
     @Override
@@ -29,10 +32,7 @@ public class MyDictionary<K,V> implements MyIDictionary<K,V>{
     }
 
     @Override
-    public Boolean contains(K key) {
-        return map.containsKey(key);
-    }
-    public Boolean myContains(K key) {
+    public boolean contains(K key) {
         return map.containsKey(key);
     }
 
@@ -48,12 +48,15 @@ public class MyDictionary<K,V> implements MyIDictionary<K,V>{
     public Set<K> getKeys() {
         return map.keySet();
     }
-    @Override
-    public Collection<V> getValues() {return map.values();}
 
     @Override
-    public Map<K, V> toMap() {
-        return this.map;
+    public Map<K, V> getMap() {
+        return map;
+    }
+
+    @Override
+    public MyIDictionary<K, V> deepCopy() {
+        return new MyDictionary<K, V>(map);
     }
 
     public String toString() {
@@ -62,4 +65,6 @@ public class MyDictionary<K,V> implements MyIDictionary<K,V>{
             str.append(key).append(" -> ").append(map.get(key)).append("\n");
         return str.toString();
     }
+
+
 }

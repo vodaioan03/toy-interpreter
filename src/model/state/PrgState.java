@@ -1,5 +1,6 @@
 package model.state;
 
+import exceptions.*;
 import model.adt.MyIDictionary;
 import model.adt.MyIHeap;
 import model.adt.MyIList;
@@ -12,21 +13,27 @@ import java.io.BufferedReader;
 
 public class PrgState {
 
+    private static int lastIndex = 0;
+    private int id;
     private MyIList<String> outputList;
     private MyIDictionary<String, IValue> symTable;
     private MyIDictionary<StringValue, BufferedReader> fileTable;
-    private MyIHeap heap;
     private MyIStack<IStatement> execStack;
     private IStatement initialState;
+    private MyIHeap heap;
 
+    private static synchronized int getNextId() {
+        return lastIndex++;
+    }
 
     public PrgState(MyIList<String> outputList, MyIDictionary<String, IValue> symTable, MyIDictionary<StringValue, BufferedReader> fileTable, MyIStack<IStatement> execStack, MyIHeap heap, IStatement initialState) {
+        this.id = getNextId();
         this.outputList = outputList;
         this.symTable = symTable;
         this.execStack = execStack;
         this.fileTable = fileTable;
-        this.initialState = initialState.deepCopy();
         this.heap = heap;
+        this.initialState = initialState.deepCopy();
         this.execStack.push(this.initialState);
     }
 
@@ -66,10 +73,13 @@ public class PrgState {
         return fileTable;
     }
 
-    public MyIHeap getHeap() {return heap;}
+    public MyIHeap getHeap() {
+        return heap;
+    }
 
-    public void setHeap(MyIHeap heap) {this.heap = heap;}
-
+    public void setHeap(MyIHeap heap) {
+        this.heap = heap;
+    }
 
     public String FileTableToString() {
         StringBuilder text = new StringBuilder();
@@ -82,13 +92,23 @@ public class PrgState {
 
     @Override
     public String toString() {
-        String output = "-------Program State-------\n";
-        output += "Symbol Table:\n" + symTable.toString() +
-                "\nExecution Stack:\n" + execStack.toString() +
-                "\nOutput List:\n" + outputList.toString() + "\n" +
-                FileTableToString() +
-                heap.toString() + "\n";
+        String output = "-------Program State " + id + "-------\n";
+        output += "Symbol Table:\n" + symTable +
+                "\nExecution Stack:\n" + execStack+
+                "\nOutput List:\n" + outputList + "\n" + FileTableToString() +
+                "\nHeap:\n" + heap;
         output += "\n---------------------------\n";
         return output;
+    }
+
+    public boolean notCompleted(){
+        return !execStack.isEmpty();
+    }
+
+    public PrgState oneStep() throws StatementException, ExpressionException, ADTException, HeapException{
+        if(execStack.isEmpty())
+            throw new EmptyStackException("Execution stack is empty");
+        IStatement currentStatement = execStack.pop();
+        return currentStatement.execute(this);
     }
 }
